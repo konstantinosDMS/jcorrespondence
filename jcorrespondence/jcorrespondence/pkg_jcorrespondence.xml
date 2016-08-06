@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <extension type="package" version="2.5.28" method="upgrade">
+ <name>JCorrespondence Package</name>
+ <author>Konstantinos Dimos</author>
+ <creationDate>December 2015</creationDate>
+ <packagename>jcorrespondence</packagename>
+ <version>1.0.0</version>
+ <url></url>
+ <packager>JCorrespondence Team</packager>
+ <packagerurl></packagerurl>
+ <description>JCorrespondence package</description>
+ <update>http://www.crimeanalysis.gr/update</update>
+ <files folder="packages">
+   <file type="plugin" id="plg_content_update_correspondence_v1.0" group="content">plg_content_update_correspondence.zip</file>
+   <file type="component" id="com_jcorrespondence" >com_jcorrespondence_v1.0.zip</file>
+ </files>
+ </extension>

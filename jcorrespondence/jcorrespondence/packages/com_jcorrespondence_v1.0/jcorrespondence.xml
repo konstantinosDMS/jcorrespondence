@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>COM_JCORRESPONDENCE</name>
+	<author>Konstantinos Dimos</author>
+	<creationDate>November 2015</creationDate>
+	<copyright>(C) 2015 Open Source Matters. All rights reserved.
+	</copyright>
+	<license>GNU General Public License version 2 or later; see
+		LICENSE.txt</license>
+	<authorEmail>konstantinosdms@gmail.com</authorEmail>
+	<authorUrl>www.crimeanalysis.gr</authorUrl>
+	<version>2.5.0</version>
+	<description>COM_XML_JCORRESPONDENCE_DESCRIPTION</description>
+        
+<!-- Runs on install/uninstall/update; New in 1.6 -->
+	<scriptfile>script.php</scriptfile>
+
+	<install> <!-- Runs on install -->
+    	<sql>
+        	<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+  		</sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+    	<sql>
+        	<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+  		</sql>
+   </uninstall>
+   
+        <update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+			<schemapath type="sqlsrv">sql/updates/sqlsrv</schemapath>
+		</schemas>
+	</update>
+        
+        <media destination="com_jcorrespondence" folder="media">
+		<filename>index.html</filename>
+		<folder>images</folder>
+                <folder>css</folder>
+                <folder>js</folder>
+	</media>
+        
+	<administration>
+		<menu img="class:weblinks">com_jcorrespondence</menu>
+	
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>jcorrespondence.php</filename>
+                <folder>help</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+                 <folder>myclasses</folder>
+			<folder>sql</folder>
+                <folder>tables</folder>
+			<folder>views</folder>
+		     </files>
+
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_jcorrespondence.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_jcorrespondence.sys.ini</language>
+		</languages>
+	</administration>
+        
+        <!-- UPDATESERVER DEFINITION -->
+	<updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" priority="1" name="JCorrespondence Update Site">http://www.crimeanalysis.gr/update/jcorrespondence-update.xml</server>
+	</updateservers>
+        
+</extension>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.6.0" type="plugin" group="content" method="upgrade" >
+	<name>PLG_CONTENT_UPDATE_CORRESPONDENCE_STATUS</name>
+	<author>Konstantinos Dimos</author>
+	<creationDate>July 2016</creationDate>
+	<copyright>(C) 2016 Konstantinos Dimos. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later;</license>
+	<authorEmail>dms.kon@gmail.com</authorEmail>
+	<authorUrl>joomla.crimeanalysis.gr/joomla</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_CONTENT_UPDATE_CORRESPONDENCE_STATUS_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="UpdateCorrespondenceStatus">UpdateCorrespondenceStatus.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+	</files>
+        <languages>
+		<language tag="en-GB">en-GB.plg_content_UpdateCorrespondenceStatus.ini</language>
+		<language tag="en-GB">en-GB.plg_content_UpdateCorrespondenceStatus.sys.ini</language>
+	</languages>
+	<config>
+        </config>
+</extension>

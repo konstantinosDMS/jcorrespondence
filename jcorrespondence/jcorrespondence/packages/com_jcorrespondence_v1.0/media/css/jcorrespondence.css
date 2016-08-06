@@ -1,0 +1,29 @@
+.icon-inbox	{ 
+  background-image: url(../images/inbox_16x16.png); 
+  background-repeat: no-repeat;
+}
+
+.icon-outbox	{ 
+  background-image: url(../images/outbox_16x16.png); 
+  background-repeat: no-repeat;
+}
+
+.icon-route	{ 
+  background-image: url(../images/route_32x32.png); 
+  background-repeat: no-repeat;
+}
+
+.icon-answearable	{ 
+  background-image: url(../images/answearable_16x16.png);
+  background-repeat: no-repeat;
+}
+
+.icon-users  {
+  background-image: url(../images/icon-user-32x32.png);
+  background-repeat: no-repeat;
+}
+
+.icon-32-jcorrespondence {
+    background-image: url(../images/message_16x16.png);
+}
+
