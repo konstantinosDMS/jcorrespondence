@@ -27,7 +27,7 @@ class JCorrespondenceController extends JControllerLegacy
                 $model1         = $this->getModel('Correspondence','JCorrespondenceModel');
                 $model2         = $this->getModel('Users','JCorrespondenceModel');
                 $numberOfUsers = (int)$model2->getUsers();
-                $model2->deleteCorrespondence();
+                
                 
                         
                 $app = JFactory::getApplication();
@@ -98,7 +98,9 @@ class JCorrespondenceController extends JControllerLegacy
 
 			return false;
                 }
-                                             
+                
+                $model2->deleteCorrespondence();
+                
     		parent::display();
 
 		return $this;

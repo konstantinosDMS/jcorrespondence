@@ -245,8 +245,7 @@ class JCorrespondenceModelUsers extends JModelList
         $query->select('count(*) as count');
         $query->from('#__users as users');
         
-        $query->join('LEFT','#__correspondence_users AS cu ON cu.userid=users.id');
-        $query->join('LEFT','#__user_usergroup_map AS ugm ON ugm.user_id=cu.userid');
+        $query->join('LEFT','#__user_usergroup_map AS ugm ON ugm.user_id=users.id');
         $query->where('(ugm.group_id=7 || ugm.group_id=8)');
                         
         $this->getDbo()->setQuery($query);
