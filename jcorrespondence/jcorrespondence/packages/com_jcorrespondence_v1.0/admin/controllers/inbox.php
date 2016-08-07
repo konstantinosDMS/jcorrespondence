@@ -23,6 +23,7 @@ jimport('joomla.application.component.controlleradmin');
 class JCorrespondenceControllerInbox extends JControllerAdmin{
     public function display($cachable = false, $urlparams = false)
     {
+        $this->getModel('Users','JCorrespondenceModel')->deleteCorrespondence();
         $this->setRedirect(JRoute::_('index.php?option=com_jcorrespondence&view=inbox&layout=default', false));
     }
 }

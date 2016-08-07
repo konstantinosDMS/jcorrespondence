@@ -97,9 +97,7 @@ class JCorrespondenceController extends JControllerLegacy
 			$this->setRedirect(JRoute::_('index.php?option=com_jcorrespondence&view=inbox&layout=default', false));
 
 			return false;
-                }
-                
-                $model2->deleteCorrespondence();
+                }          
                 
     		parent::display();
 
